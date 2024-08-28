@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #9956f6;
+    --secondary-color: #e1e1e6;
+    --accent-color: #00a277;
+    --background-color: #333;
+    --font-color: #fff;
+    --border-radius: 5px;
+    --padding: 10px;
+    --font-size-base: 1em;
+    --font-size-h1: 2em;
+    --font-size-h2: 1.5em;
+    --box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Advent Pro', sans-serif;
+    background-color: var(--primary-color);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: var(--font-size-h1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+input[type="number"] {
+    padding: var(--padding);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: var(--font-size-base);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    border: none;
+    padding: var(--padding) 20px;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007a5c;
+}
+
+h2 {
+    margin-top: 30px;
+    color: var(--font-color);
+    font-size: var(--font-size-h2);
+}
+
+span#resultado {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.container {
+    background-color: var(--background-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    width: 300px;
+    text-align: center;
+}
+
+@media (min-width: 48em) {
+    .container {
+        width: 25em;
+        margin: 25px;
+    }
+}
